@@ -20,7 +20,7 @@ Feature: Login feature
     And I see number 12 in text field
 
 
-  @login-3
+  @login-4
   Scenario Outline: Verify Invalid Login for multiple users
     When I enter <username> into username text fields on home screen
     And I enter <password> into password text fields on home screen

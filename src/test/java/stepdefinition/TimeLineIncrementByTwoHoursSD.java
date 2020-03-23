@@ -62,7 +62,7 @@ public class TimeLineIncrementByTwoHoursSD extends DarkSkyHomePage {
 
         String localTimeInLowercase=FOMATTER.format(localTime).toLowerCase();
 
-        for (int i = 1; i < timelineArrayList.size()+1; i++) {
+        for (int i = 0; i < timelineArrayList.size(); i++) {
 
             localTimeArraylist.add(localTimeInLowercase);
             localTime = localTime.plusHours(2);

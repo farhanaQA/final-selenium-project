@@ -68,4 +68,9 @@ public class BasePage {
 		//select element by index
 		selectMonth.selectByIndex(index);
 	}
+	public void selectByTextFromDropDown(By locator, String text) {
+		WebElement dropDownElement = SharedSD.getDriver().findElement(locator);
+		Select dropDown = new Select(dropDownElement);
+		dropDown.selectByVisibleText(text);
+	}
 }
